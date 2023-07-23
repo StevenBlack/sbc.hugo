@@ -1,0 +1,79 @@
+baseURL = 'http://stevenblack.com/'
+languageCode = 'en-us'
+title = 'Steven Black'
+themeXX = 'hugo-initio'
+themeURLXX = 'https://themes.gohugo.io/themes/hugo-initio/'
+
+[params]
+    name = "Steven Black"
+    description = "Computer Systems Analyst"
+    email = "steveb@stevenblack.com"
+    phone = "+613 572-0626"
+    address = "57 Kenwoods Circle, Kingston, ON, CANADA K7K 6Y1"
+    year = 2023
+    avatar = "images/avatar.jpg"
+    avatarclass = "circle"
+    background = ""
+    bannerXX = "images/bg_head.jpg"
+    favicon = "images/foxpaw.png"
+    DateForm = "January 2, 2006"
+    author = "Sergey Pozhilov (GetTemplate.com)"
+
+    showSubheader = true
+    showServices = true
+    showRecentWorks = true
+    showDownloads = true
+    showClients = true
+
+    showFooterContact = true
+    showFooterFollowMe = true
+    showFooterTextWidget = true
+    showFooterFormWidget = true
+
+[[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "blog"
+    url = "/post/"
+    weight = 5
+
+[params.sharethis]
+    property = "123456789012345678901234"
+    custom = true
+
+[params.google.analyticsXXX]
+    trackerID = "GA-000000000-0"
+
+[[params.social]]
+	title = "github"
+	url = "https://github.com/StevenBlack"
+    icon = "fab fa-github"
+    footer = true
+    sharethis = false
+    network = ""
+
+[[params.social]]
+	title = "mastodon"
+	url = "http://mastodon.social/@steveblack"
+    icon = "fab fa-mastodon"
+    footer = true
+    sharethis = true
+    network = "mastodon"
+
+[[params.social]]
+	title = "twitter"
+	url = "https://twitter.com/SteveBlack"
+    icon = "fab fa-twitter-square"
+    footer = true
+    sharethis = true
+    network = "twitter"
+
+[[params.social]]
+	title = "email"
+	url = "mailto:steveb@stevenblack.com"
+    icon = "fas fa-envelope-square"
+    footer = false
+    sharethis = true
+    network = "email"
