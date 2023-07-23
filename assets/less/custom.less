@@ -1,0 +1,208 @@
+/* custom less file */
+
+// TYPOGRAPHY
+// -----------------------------------------------------
+
+@import url('//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+
+
+/* @import "bootstrap.less"; */
+
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Reset
+@import "normalize.less";
+@import "print.less";
+
+// Core CSS
+@import "scaffolding.less";
+@import "type.less";
+@import "code.less";
+@import "grid.less";
+@import "tables.less";
+@import "forms.less";
+@import "buttons.less";
+
+// Components
+@import "component-animations.less";
+@import "glyphicons.less";
+@import "dropdowns.less";
+// @import "button-groups.less";
+// @import "input-groups.less";
+@import "navs.less";
+@import "navbar.less";
+// @import "breadcrumbs.less";
+// @import "pagination.less";
+// @import "pager.less";
+@import "labels.less";
+// @import "badges.less";
+@import "jumbotron.less";
+// @import "thumbnails.less";
+@import "alerts.less";
+// @import "progress-bars.less";
+@import "media.less";
+// @import "list-group.less";
+@import "panels.less";
+@import "wells.less";
+// @import "close.less";
+
+// Components w/ JavaScript
+// @import "modals.less";
+// @import "tooltip.less";
+// @import "popovers.less";
+// @import "carousel.less";
+
+// Utility classes
+@import "utilities.less";
+@import "responsive-utilities.less";
+
+
+/*
+* Callouts
+*
+* Not quite alerts, but custom and helpful notes for folks reading the docs.
+* Requires a base and modifier class.
+*  class="bs-callout bs-callout-info"
+*/
+
+.bs-callout {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 3px solid #eeeeee;
+    code, .highlight {
+    }
+    h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.bs-callout-danger {
+    background-color: #fdf7f7;
+    border-color: #eed3d7;
+    h4 {
+        color: #b94a48;
+    }
+}
+
+.bs-callout-warning {
+    background-color: #faf8f0;
+    border-color: #faebcc;
+    h4 {
+        color: #c09853;
+    }
+}
+
+.bs-callout-info {
+    background-color: #f4f8fa;
+    border-color: #bce8f1;
+    h4 {
+        color: #3a87ad;
+    }
+}
+
+/* For the fixed navbar */
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+@font-size-mini: @font-size-base * 0.75; // ~11px
+
+/* Temp screwups */
+@headingsColor: inherit; // empty to use BS default, @textColor
+
+img.sblogo {
+	margin: 0 15px 5px 0;
+}
+
+img.fullwidth {
+	width:100%;
+}
+
+.locators { line-height:1em; font-family:@font-family-sans-serif;}
+.locators div { height:70px;  margin-bottom:1.5em; padding:0px; }
+.locators div a { border-width:0px; color:#333; display:block; padding:10px; height:100%;}
+.locators div a:hover { background-color:maroon; color:#eee; }
+.locators div a img { float:left; margin-right:10px; }
+.ui-corner-all { -moz-border-radius: 4px/*{cornerRadius}*/; -webkit-border-radius: 4px/*{cornerRadius}*/; border-radius: 4px/*{cornerRadius}*/; }
+
+.masthead {
+	margin-bottom:1em;
+}
+
+.masthead .nameandlogo h1 {
+	line-height:1;
+}
+
+@media(min-width:@screen-md){
+	.locators {
+		font-size: @font-size-small;
+	}
+}
+
+@media(max-width:@screen-md){
+	.masthead .nameandlogo h1 {
+		font-size: 30px;
+	}
+
+	.masthead .stinger p {
+		font-size: 16px;
+	}
+}
+
+@media(min-width:@screen-sm){
+	.locators {
+		font-size: @font-size-mini;
+	}
+
+}
+
+
+.emphBlock { font-style: italic; color: #0089AF; }
+.col1st { width: 25% }
+.col2nd { width: 75% }
+
+pre, code {
+	white-space: pre;
+}
+
+@media only screen and (min-width:0) and (max-width:@screen-xs-max)  {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+	  font-family: @font-family-sans-serif;
+	}
+
+	h1, .h1 { font-size: @font-size-h1 * @xs-heading-font-size-factor; }
+	h2, .h2 { font-size: @font-size-h2 * @xs-heading-font-size-factor; }
+	h3, .h3 { font-size: @font-size-h3 * @xs-heading-font-size-factor; font-weight: bold;}
+	h4, .h4 { font-size: @font-size-h4 * @xs-heading-font-size-factor; font-weight: bold; }
+	h5, .h5 { font-size: @font-size-h5 * @xs-heading-font-size-factor; font-weight: bold;}
+	h6, .h6 { font-size: @font-size-h6 * @xs-heading-font-size-factor; font-weight: bold;}
+	.jumbotron p { font-size: @font-size-base * 1.15; }
+}
+
+@media only screen and (min-width:@screen-sm-min) and (max-width:@screen-sm-max)  {
+
+	h1, .h1 { font-size: @font-size-h1 * @sm-heading-font-size-factor; }
+	h2, .h2 { font-size: @font-size-h2 * @sm-heading-font-size-factor; }
+	h3, .h3 { font-size: @font-size-h3 * @sm-heading-font-size-factor;  font-weight: bold;}
+	h4, .h4 { font-size: @font-size-h4 * @sm-heading-font-size-factor;  font-weight: bold;}
+	h5, .h5 { font-size: @font-size-h5 * @sm-heading-font-size-factor;  font-weight: bold;}
+	h6, .h6 { font-size: @font-size-h6 * @sm-heading-font-size-factor;  font-weight: bold;}
+	.jumbotron p { font-size: @font-size-base * 1.25; }
+}
+
+@media only screen and (min-width:@screen-md-min) and (max-width:@screen-md-max)  {
+	h1, .h1 { font-size: @font-size-h1 * @md-heading-font-size-factor; }
+	h2, .h2 { font-size: @font-size-h2 * @md-heading-font-size-factor; }
+	h3, .h3 { font-size: @font-size-h3 * @md-heading-font-size-factor;  font-weight: bold;}
+	h4, .h4 { font-size: @font-size-h4 * @md-heading-font-size-factor;  font-weight: bold;}
+	h5, .h5 { font-size: @font-size-h5 * @md-heading-font-size-factor;  font-weight: bold;}
+	h6, .h6 { font-size: @font-size-h6 * @md-heading-font-size-factor;  font-weight: bold;}
+}
