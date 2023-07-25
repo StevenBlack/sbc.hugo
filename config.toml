@@ -1,0 +1,9 @@
+baseURL = 'http://stevenblack.com/'
+languageCode = 'en-us'
+title = 'Steven Black'
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark]
+      [markup.goldmark.renderer]
+        unsafe = true
