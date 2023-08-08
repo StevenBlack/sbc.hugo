@@ -2,6 +2,6 @@
 title: Articles
 ---
 
-# This is the about page (markdown)
+<h1>Articles</h1>
 
-<h1>This is the about page (HTML)</h1>
+Coming soon.
